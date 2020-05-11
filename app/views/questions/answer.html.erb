@@ -1,0 +1,14 @@
+<%= params[:message] %>
+
+
+<% if params[:message] == "i am going to work right now!"%>
+  <p><%= "Great" %></p>
+<% elsif params[:message].ends_with?("?") %>
+  <p><% "Silly question, get dressed and go to work!" %></p>
+<% else %>
+  <p>class="banner"<%="I don't care, get dressed and go to work!"%></p>
+<% end %>
+
+<a><%= link_to "Find a better coach", ask_path %></a>
+
+
